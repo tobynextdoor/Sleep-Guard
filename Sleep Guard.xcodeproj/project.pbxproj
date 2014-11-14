@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F64196171A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64196161A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift */; };
+		F64196191A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64196181A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift */; };
 		F64494321A156F9600704B85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64494311A156F9600704B85 /* AppDelegate.swift */; };
 		F64494351A156F9600704B85 /* Sleep_Guard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F64494331A156F9600704B85 /* Sleep_Guard.xcdatamodeld */; };
-		F64494371A156F9600704B85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64494361A156F9600704B85 /* ViewController.swift */; };
 		F644943A1A156F9600704B85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F64494381A156F9600704B85 /* Main.storyboard */; };
 		F644943C1A156F9600704B85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F644943B1A156F9600704B85 /* Images.xcassets */; };
 		F644943F1A156F9600704B85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F644943D1A156F9600704B85 /* LaunchScreen.xib */; };
 		F644944B1A156F9600704B85 /* Sleep_GuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644944A1A156F9600704B85 /* Sleep_GuardTests.swift */; };
+		F64494551A15740F00704B85 /* MetaWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64494541A15740F00704B85 /* MetaWear.framework */; };
+		F64494571A15798D00704B85 /* SleepGuardSleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64494561A15798D00704B85 /* SleepGuardSleepViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +30,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F64196161A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepGuardMetaWearSelectionViewController.swift; sourceTree = "<group>"; };
+		F64196181A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepGuardTimeSelectionViewController.swift; sourceTree = "<group>"; };
+		F641961D1A16230200249983 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		F644942C1A156F9600704B85 /* Sleep Guard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep Guard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64494301A156F9600704B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F64494311A156F9600704B85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F64494341A156F9600704B85 /* Sleep_Guard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sleep_Guard.xcdatamodel; sourceTree = "<group>"; };
-		F64494361A156F9600704B85 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F64494391A156F9600704B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F644943B1A156F9600704B85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F644943E1A156F9600704B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F64494441A156F9600704B85 /* Sleep GuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sleep GuardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F64494491A156F9600704B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F644944A1A156F9600704B85 /* Sleep_GuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_GuardTests.swift; sourceTree = "<group>"; };
+		F64494541A15740F00704B85 /* MetaWear.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetaWear.framework; path = "../Metawear-iOSAPI/MetaWear.framework"; sourceTree = "<group>"; };
+		F64494561A15798D00704B85 /* SleepGuardSleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepGuardSleepViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64494551A15740F00704B85 /* MetaWear.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +72,7 @@
 				F644942E1A156F9600704B85 /* Sleep Guard */,
 				F64494471A156F9600704B85 /* Sleep GuardTests */,
 				F644942D1A156F9600704B85 /* Products */,
+				F64494541A15740F00704B85 /* MetaWear.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +88,15 @@
 		F644942E1A156F9600704B85 /* Sleep Guard */ = {
 			isa = PBXGroup;
 			children = (
-				F64494311A156F9600704B85 /* AppDelegate.swift */,
-				F64494361A156F9600704B85 /* ViewController.swift */,
+				F64196161A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift */,
+				F64196181A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift */,
+				F64494561A15798D00704B85 /* SleepGuardSleepViewController.swift */,
 				F64494381A156F9600704B85 /* Main.storyboard */,
 				F644943B1A156F9600704B85 /* Images.xcassets */,
 				F644943D1A156F9600704B85 /* LaunchScreen.xib */,
 				F64494331A156F9600704B85 /* Sleep_Guard.xcdatamodeld */,
 				F644942F1A156F9600704B85 /* Supporting Files */,
+				F641961D1A16230200249983 /* Bridging-Header.h */,
 			);
 			path = "Sleep Guard";
 			sourceTree = "<group>";
@@ -93,6 +104,7 @@
 		F644942F1A156F9600704B85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F64494311A156F9600704B85 /* AppDelegate.swift */,
 				F64494301A156F9600704B85 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -159,11 +171,13 @@
 		F64494241A156F9600704B85 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SleepGuard;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = tobynextdoor;
 				TargetAttributes = {
 					F644942B1A156F9600704B85 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = QC764BRG65;
 					};
 					F64494431A156F9600704B85 = {
 						CreatedOnToolsVersion = 6.1;
@@ -215,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F64494371A156F9600704B85 /* ViewController.swift in Sources */,
+				F64494571A15798D00704B85 /* SleepGuardSleepViewController.swift in Sources */,
+				F64196191A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift in Sources */,
 				F64494321A156F9600704B85 /* AppDelegate.swift in Sources */,
+				F64196171A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift in Sources */,
 				F64494351A156F9600704B85 /* Sleep_Guard.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +358,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jan Wergin (WNCAN85JS6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jan Wergin (WNCAN85JS6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Tobias/Developer/ObjectiveC/Projects/Metawear-iOSAPI",
+				);
 				INFOPLIST_FILE = "Sleep Guard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sleep Guard/Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,9 +378,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jan Wergin (WNCAN85JS6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jan Wergin (WNCAN85JS6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Tobias/Developer/ObjectiveC/Projects/Metawear-iOSAPI",
+				);
 				INFOPLIST_FILE = "Sleep Guard/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sleep Guard/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +446,7 @@
 				F64494501A156F9600704B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F64494511A156F9600704B85 /* Build configuration list for PBXNativeTarget "Sleep GuardTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +455,7 @@
 				F64494531A156F9600704B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
