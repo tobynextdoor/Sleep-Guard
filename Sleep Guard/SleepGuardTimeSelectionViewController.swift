@@ -12,6 +12,8 @@ class SleepGuardTimeSelectionViewController: UIViewController {
     
     var device: MBLMetaWear!
     
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -19,6 +21,7 @@ class SleepGuardTimeSelectionViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.destinationViewController .isKindOfClass(SleepGuardSleepViewController.classForCoder()) {
             (segue.destinationViewController as SleepGuardSleepViewController).device = device
+            (segue.destinationViewController as SleepGuardSleepViewController).wakeTime = datePicker.date
         }
     }
 }

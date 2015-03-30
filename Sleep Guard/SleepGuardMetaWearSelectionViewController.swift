@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class SleepGuardMetaWearSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var devices: [MBLMetaWear] = []
@@ -21,6 +20,8 @@ class SleepGuardMetaWearSelectionViewController: UIViewController, UITableViewDa
         super.viewDidLoad()
 
         startScanning()
+        
+        tableView.tableFooterView = UIView(frame: CGRectZero)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -68,12 +69,22 @@ class SleepGuardMetaWearSelectionViewController: UIViewController, UITableViewDa
         MBLMetaWearManager.sharedManager().stopScanForMetaWears()
         
         connectingView.hidden = false
+        connectingView.alpha = 0
+
+        UIView.animateWithDuration(0.3, animations: {() -> Void in
+            self.connectingView.alpha = 1.0
+        })
         
         selectedDevice.connectWithHandler({(error) -> Void in
             if error == nil {
+                self.selectedDevice.led.setLEDOn(false, withOptions: 0)
+                
                 self.performSegueWithIdentifier("To Timer Selection", sender: self)
             } else {
-                self.connectingView.hidden = true
+                UIView.animateWithDuration(0.3, animations: {() -> Void in
+                    self.connectingView.alpha = 0.0
+                })
+                
                 self.startScanning()
             }
         })

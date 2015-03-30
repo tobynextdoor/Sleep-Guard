@@ -17,6 +17,11 @@
 		F644944B1A156F9600704B85 /* Sleep_GuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F644944A1A156F9600704B85 /* Sleep_GuardTests.swift */; };
 		F64494551A15740F00704B85 /* MetaWear.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F64494541A15740F00704B85 /* MetaWear.framework */; };
 		F64494571A15798D00704B85 /* SleepGuardSleepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64494561A15798D00704B85 /* SleepGuardSleepViewController.swift */; };
+		F688516E1A1BFCE600E5D8F7 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = F68851691A1BFCE600E5D8F7 /* BEMCircle.m */; };
+		F688516F1A1BFCE600E5D8F7 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = F688516B1A1BFCE600E5D8F7 /* BEMLine.m */; };
+		F68851701A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = F688516D1A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.m */; };
+		F68851721A1C12FB00E5D8F7 /* SleepGuardSleepAnalysisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68851711A1C12FB00E5D8F7 /* SleepGuardSleepAnalysisViewController.swift */; };
+		F69564211A1D215D0089025D /* SleepGuard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F69564201A1D215D0089025D /* SleepGuard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,14 @@
 		F644944A1A156F9600704B85 /* Sleep_GuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_GuardTests.swift; sourceTree = "<group>"; };
 		F64494541A15740F00704B85 /* MetaWear.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetaWear.framework; path = "../Metawear-iOSAPI/MetaWear.framework"; sourceTree = "<group>"; };
 		F64494561A15798D00704B85 /* SleepGuardSleepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepGuardSleepViewController.swift; sourceTree = "<group>"; };
+		F68851681A1BFCE600E5D8F7 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		F68851691A1BFCE600E5D8F7 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		F688516A1A1BFCE600E5D8F7 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		F688516B1A1BFCE600E5D8F7 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		F688516C1A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		F688516D1A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		F68851711A1C12FB00E5D8F7 /* SleepGuardSleepAnalysisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepGuardSleepAnalysisViewController.swift; sourceTree = "<group>"; };
+		F69564201A1D215D0089025D /* SleepGuard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SleepGuard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +101,16 @@
 		F644942E1A156F9600704B85 /* Sleep Guard */ = {
 			isa = PBXGroup;
 			children = (
+				F69564201A1D215D0089025D /* SleepGuard.swift */,
 				F64196161A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift */,
 				F64196181A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift */,
 				F64494561A15798D00704B85 /* SleepGuardSleepViewController.swift */,
+				F68851711A1C12FB00E5D8F7 /* SleepGuardSleepAnalysisViewController.swift */,
 				F64494381A156F9600704B85 /* Main.storyboard */,
 				F644943B1A156F9600704B85 /* Images.xcassets */,
 				F644943D1A156F9600704B85 /* LaunchScreen.xib */,
 				F64494331A156F9600704B85 /* Sleep_Guard.xcdatamodeld */,
+				F68851671A1BFCE600E5D8F7 /* Graph-Classes */,
 				F644942F1A156F9600704B85 /* Supporting Files */,
 				F641961D1A16230200249983 /* Bridging-Header.h */,
 			);
@@ -125,6 +141,20 @@
 				F64494491A156F9600704B85 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F68851671A1BFCE600E5D8F7 /* Graph-Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F68851681A1BFCE600E5D8F7 /* BEMCircle.h */,
+				F68851691A1BFCE600E5D8F7 /* BEMCircle.m */,
+				F688516A1A1BFCE600E5D8F7 /* BEMLine.h */,
+				F688516B1A1BFCE600E5D8F7 /* BEMLine.m */,
+				F688516C1A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.h */,
+				F688516D1A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.m */,
+			);
+			name = "Graph-Classes";
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +261,13 @@
 			files = (
 				F64494571A15798D00704B85 /* SleepGuardSleepViewController.swift in Sources */,
 				F64196191A161C6C00249983 /* SleepGuardTimeSelectionViewController.swift in Sources */,
+				F688516E1A1BFCE600E5D8F7 /* BEMCircle.m in Sources */,
+				F68851721A1C12FB00E5D8F7 /* SleepGuardSleepAnalysisViewController.swift in Sources */,
 				F64494321A156F9600704B85 /* AppDelegate.swift in Sources */,
+				F688516F1A1BFCE600E5D8F7 /* BEMLine.m in Sources */,
 				F64196171A161C5600249983 /* SleepGuardMetaWearSelectionViewController.swift in Sources */,
+				F69564211A1D215D0089025D /* SleepGuard.swift in Sources */,
+				F68851701A1BFCE600E5D8F7 /* BEMSimpleLineGraphView.m in Sources */,
 				F64494351A156F9600704B85 /* Sleep_Guard.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
